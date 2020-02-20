@@ -34,10 +34,10 @@ Fetches the profile information related to the gaming id sent on the URL
 
 ##### Results set
 |Code| Description  | Sample value |
-|--|--|--|--|
+|--|--|--|
 | 200 | successful operation  | `{  "profileId":  "123e4567-e89b-12d3-a456-426655440000",  "firstName":  "Ricardo",  "middleName":  "X",  "lastName":  "Martinez",  "gamingId":  "333434122211",  "DOB":  "01/01/2020",  "addresses":  [  {  "address1":  "string",  "address2":  "x",  "city":  "Davie",  "stateProvince":  "FL",  "postalCode":  94595,  "country":  "USA",  "addressType":  "home"  }  ],  "communication":  {  "primaryEmail":  "r@shrss.com",  "alternateEmail":  "r@shrss.com",  "homePhone":  "000-000-0000",  "workPhone":  "000-000-0000",  "cellPhone":  "000-000-0000"  }  }` 
-|400|invalid ID supplied
-|404|profile not found
+|400|invalid ID supplied||
+|404|profile not found||
 
 # Sync Service
 ## Create - Update Profile
@@ -49,9 +49,9 @@ If exists, updates the profile information related to the gaming ID sent on the 
 
 #### Request Body
 
-|Name| Type| Sample value | Required
+|Name| Type| Sample value | Required|
 |--|--|--|--|
-|firstName|string |Ricardo| X
+|firstName|string |Ricardo| X|
 | middleName | string | D | 
 |lastName|string|Martinez|X
 |gamingId|string|333434122211|
@@ -61,13 +61,13 @@ If exists, updates the profile information related to the gaming ID sent on the 
 
 #### Responses
 ##### Model
-|Name| Type| Sample value | Required
+|Name| Type| Sample value | Required|
 |--|--|--|--|
-| profileId | string  | 123e4567-e89b-12d3-a456-426655440000 | X 
-|primaryDetailsUpdated|string |true| 
+| profileId | string  | 123e4567-e89b-12d3-a456-426655440000 | X |
+|primaryDetailsUpdated|string |true||
 
 ##### Results set
 |Code| Description  |Sample Value
-|--|--|--|--|
-|200|successful operation|{  "profileId":  "123e4567-e89b-12d3-a456-426655440000",  "primaryDetailsUpdated":  true  }
-|405|Invalid input
+|--|--|--|
+|200|successful operation|{  "profileId":  "123e4567-e89b-12d3-a456-426655440000",  "primaryDetailsUpdated":  true  }|
+|405|Invalid input||
