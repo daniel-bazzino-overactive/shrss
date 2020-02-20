@@ -1,7 +1,9 @@
+# Profile and Sync Services
+
 Profile and Sync services are part of the OneGuest project effort and they are intended to attend the following actions:
 
 - #### [Get Profiles by Gaming Id](#get-profile-by-gaming-id)
-- #### [Create/Update Profiles](#create---update-profile)
+- #### [Create/Update Profile](#create---update-profile)
 
 # Profile Service
 ## Get Profile by Gaming Id
@@ -40,7 +42,7 @@ Fetches the profile information related to the gaming id sent on the URL
 # Sync Service
 ## Create - Update Profile
 ### Description
-Updates the profile information related to the gaming ID sent on the request body, if exists, Otherwise it creates a new one with it.
+If exists, updates the profile information related to the gaming ID sent on the request body. Otherwise, it creates a new one using that information.
 #### Resource address
 
     PUT: /sync
