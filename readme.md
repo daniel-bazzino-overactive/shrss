@@ -64,7 +64,7 @@ If exists, updates the profile information related to the gaming ID sent on the 
 |Name| Type| Sample value | Required|
 |--|--|--|--|
 | profileId | string  | 123e4567-e89b-12d3-a456-426655440000 | X |
-|primaryDetailsUpdated|string |true||
+|primaryDetailsUpdated|boolean|true||
 
 ##### Results set
 |Code| Description  |Sample Value
